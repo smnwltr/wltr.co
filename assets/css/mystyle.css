@@ -3,6 +3,18 @@
     font-family: Futura, Helvetica, sans-serif;
    }
 
+.main a {
+  border-bottom: 2px dotted black;
+  color: black;
+  padding-bottom: 2px;
+}
+
+.main a:hover {
+  border-color: #333333;
+  color: #333333;
+  text-decoration: none;
+}
+
 /* Navbar styles */
 
 .navbar {
