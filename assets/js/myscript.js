@@ -21,7 +21,7 @@ window.onload = function () {
 
 // smooth scrolling
 $(document).ready(function () {
-    $(".nav-item a[href^='#']").click(function (e) {
+    $(".smooth-scroll").click(function (e) {
         e.preventDefault();
 
         var position = $($(this).attr("href")).offset().top;
