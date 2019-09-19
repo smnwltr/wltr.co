@@ -6,10 +6,10 @@ layout: base
         <img src="/assets/img/header.jpg" alt="{{site.title}}" />
     </div>
     <div class="container">
-        <h1 class="mt-5"><strong><span style="font-size: 190%">SIMON WALTER</span></strong><br />
+        <h1 class="mt-4"><strong><span style="font-size: 190%">SIMON WALTER</span></strong><br />
             DIGITAL BUSINESS CONSULTING</h1>
-        <div class="row mt-5">
-            <div class="col-sm-6">
+        <div class="row mt-4">
+            <div class="col-md-9">
                 <p>Von digitaler Prozessoptimierung über Implementierung von Softwarelösungen bis hin zur strategischen
                     Neuausrichtung – wir sind Ihr Partner, um alle digitalen Herausforderungen zu meistern. </p>
             </div>
@@ -22,9 +22,15 @@ layout: base
 <div class="container section" id="services">
     <h2>Leistungen</h2>
     {% for i in site.data.services %}
-    <h4 class="mt-5">{{i.name}}</h4>
-    <p>{{i.description}}</p>
+    <div class="row">
+        <div class="col-md-9">
+            <h4 class="mt-5">{{i.name}}</h4>
+            <p>{{i.description}}</p>
+        </div>
+
+    </div>
     {% endfor %}
+
     <a href="#contact" class="smooth-scroll mt-3">> Weiter</a>
 
 </div>
