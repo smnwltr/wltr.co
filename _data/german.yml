@@ -1,0 +1,70 @@
+general:
+  continue: Weiter
+  up: "Nach oben"
+  menu: 
+    - name: Home
+      id: home
+    - name: Profil
+      id: profile
+    - name: Leistungen
+      id: services
+    - name: Kontakt
+      id: contact
+
+home:
+  id: home
+  boilerplate: >-
+    Von digitaler Prozessoptimierung über Implementierung von Softwarelösungen bis hin zur
+    strategischen Neuausrichtung – wir sind Ihr Partner, um alle digitalen Herausforderungen zu meistern.
+  typed:
+    start: "Wir sind ihr Partner für " 
+    strings: []
+
+profile:
+  id: profile
+  heading: Profil
+  p: "lorem ipsumsss"
+
+services:
+  id: services
+  heading: Leistungen
+  items:
+    - name: Prozessoptimierung
+      description: >- 
+        Digitalisierung bedeutet neue Chancen und Potenzial für Ihr Geschäft. Wir helfen Ihnen dabei,
+        das volle Potenzial in Ihrem Markt zu erreichen und unterstützen Sie bei der Optimierung von
+        digitalen Geschäftsprozessen und der Einführung neuester Software. 
+
+    - name: Projektmanagement
+      description: >- 
+        Wir begleiten Sie bei der Einführung neuer Software in Ihrere Organisation. 
+        Durch langjährige Erfahrungen finden wir uns im Konzern genauso wie im Startup 
+        oder im Mittelstand bestens zurecht. Unser Service ist immer abgestimmt auf die Bedürfnisse des Kunden.
+
+    - name: Interimmanagement
+      description: >- 
+        Sie haben einen kurzfristigen Engpass und benötigen schnelle Abhilfe? 
+        Wir helfen schnell und unkompliziert für kurze oder mittelfristige Zeiträume.
+        Egal ob IT, Fachbereich oder Schnittstellenfunktion, durch breite Erfahrung 
+        in allen Business-Funktionen können wir Sie ideal unterstützen um Ihre Ziele zu erreichen.
+
+contact:
+  id: contact
+  heading: Kontakt
+  p: "Interesse geweckt? Schreiben Sie mir jederzeit oder rufen Sie an:"
+  items: 
+    - name: LinkedIn
+      link: //linkedin.com/in/smnwltr
+      type: https
+    - name: hello@wltr.co
+      link: hello@wltr.co
+      type: mailto
+    - name: "+49 178 1696739"
+      link: 00491781696739
+      type: tel
+
+footer:
+  imprint: Impressum
+  privacy: Datenschutzerkl&auml;rung
+
+

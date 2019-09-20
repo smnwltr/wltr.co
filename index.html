@@ -1,6 +1,8 @@
 ---
 layout: base
 ---
+{% assign data = site.data.german %}
+
 <div class="section" id="home">
     <div id="header-image">
         <img src="/assets/img/header.jpg" alt="{{site.title}}" />
@@ -8,24 +10,25 @@ layout: base
     <div class="container">
         <h1 class="mt-4"><strong><span style="font-size: 190%">SIMON WALTER</span></strong><br />
             DIGITAL BUSINESS CONSULTING</h1>
-
-        <h4 class="my-3">Wir sind Ihr Partner für <span class="self"></span></h4>
-
+        <h4 class="my-3">{{data.home.typed.start}}<span class="self"></span></h4>
         <div class="row mt-4">
             <div class="col-md-9">
-                <p>Von digitaler Prozessoptimierung über Implementierung von Softwarelösungen bis hin zur
-                    strategischen
-                    Neuausrichtung – wir sind Ihr Partner, um alle digitalen Herausforderungen zu meistern. </p>
+                <p>{{data.home.boilerplate}}</p>
             </div>
-
         </div>
-        <a href="#services" class="smooth-scroll mt-3">> Weiter</a>
+        <a href="#profile" class="smooth-scroll mt-3">> {{data.general.continue}}</a>
     </div>
 </div>
 
+<div class="container section" id="profile">
+    <h2>{{data.profile.heading}}</h2>
+    <p>{{data.profile.p}}</p>
+    <a href="#services" class="smooth-scroll mt-3">> {{data.general.continue}}</a>
+</div>
+
 <div class="container section" id="services">
-    <h2>Leistungen</h2>
-    {% for i in site.data.services %}
+    <h2>{{data.services.heading}}</h2>
+    {% for i in data.services.items %}
     <div class="row">
         <div class="col-md-9">
             <h4 class="mt-5">{{i.name}}</h4>
@@ -34,16 +37,14 @@ layout: base
 
     </div>
     {% endfor %}
-
     <a href="#contact" class="smooth-scroll mt-3">> Weiter</a>
-
 </div>
 
 <div class="container section" id="contact">
-    <h2>Kontakt</h2>
-    <p>Interesse geweckt? Schreiben Sie mir jederzeit oder rufen Sie an:
-    </p>
-    <p><a href="https://linkedin.com/in/smnwltr" target="_blank" rel="noopener">LinkedIn</a></p>
-    <p><a href="mailto:hello@wltr.co">hello@wltr.co</a></p>
-    <p><a href="tel:00491781696739">+49 1781696739</a></p>
+    <h2>{{data.contact.heading}}</h2>
+    <p>{{data.contact.p}}</p>
+    {% for i in data.contact.items %}
+    <p><a href="{{i.type}}:{{i.link}}" {% if i.type == "https" %} target="_blank" rel="noopener"
+            {% endif %}>{{i.name}}</a></p>
+    {% endfor %}
 </div>

@@ -1,3 +1,5 @@
+{% assign data = site.data.german %}
+
 <div class="container-fluid footer-container">
     <div class="container">
         <div class="row py-4">
@@ -10,8 +12,8 @@
                 <a href="mailto:hello@wltr.co">hello@wltr.co</a></p>
             </div>
             <div class="col-md-4">
-                <a href="#imprintModal" data-toggle="modal">Impressum</a><br />
-                <a href="#dataModal" data-toggle="modal">Datenschutzerkl&auml;rung</a>
+                <a href="#imprintModal" data-toggle="modal">{{data.footer.imprint}}</a><br />
+                <a href="#dataModal" data-toggle="modal">{{data.footer.privacy}}</a>
             </div>
         </div>
     </div>
