@@ -41,16 +41,3 @@ $(document).ready(function () {
     $(function () { $(".scroll").click(function () { $("html,body").animate({ scrollTop: 0 }, 1000); return false }) })
 
 });
-
-$(document).ready(function () {
-    $(function () {
-        $(".self").typed({
-            strings: ["digitale Prozessoptimierung", "Auswahl von Software-Tools", "digitale Business Cases", "Schnittstellen-Entwicklung", "Interimmanagement", "digitale Strategie", "agile Methoden", "..."],
-            typeSpeed: 30,
-            startDelay: 750,
-            loop: true,
-            backDelay: 750,
-        });
-    });
-});
-
