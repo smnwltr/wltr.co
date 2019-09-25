@@ -84,6 +84,9 @@ a,.thicker,.scrolltop {
     min-height: 100vh;
 }
 
+#contact {
+  min-height: 50vh;
+}
 /* Scroll top */
 
 .scrolltop {
@@ -238,4 +241,10 @@ a,.thicker,.scrolltop {
 
 @media only screen and (max-width: 960px) {
   .typed {min-height: 4rem}
+}
+
+.profile li {
+  font-size: 120%;
+  margin-top: 2rem;
+
 }

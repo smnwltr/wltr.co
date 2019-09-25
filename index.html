@@ -5,7 +5,7 @@ layout: base
 
 <div class="section" id="home">
     <div id="header-image">
-        <img src="/assets/img/header.jpg" alt="{{site.title}}" />
+        <img src="assets/img/header.jpg" alt="{{site.title}}" />
     </div>
     <div class="container">
         <h1 class="mt-4"><strong><span style="font-size: 190%">SIMON WALTER</span></strong><br />
@@ -18,14 +18,18 @@ layout: base
                 <p>{{data.home.boilerplate}}</p>
             </div>
         </div>
-        <a href="#profile" class="smooth-scroll mt-3">> {{data.general.continue}}</a>
+        <p class="mt-5"><a href="#profile" class="smooth-scroll">> {{data.general.continue}}</a></p>
     </div>
 </div>
 
 <div class="container section" id="profile">
     <h2>{{data.profile.heading}}</h2>
-    <p>{{data.profile.p}}</p>
-    <a href="#services" class="smooth-scroll mt-3">> {{data.general.continue}}</a>
+    <ul class="profile">
+        {% for i in  data.profile.p %}
+        <li>{{i}}</li>
+        {% endfor %}
+    </ul>
+    <p class="mt-5"><a href="#services" class="smooth-scroll">> {{data.general.continue}}</a></p>
 </div>
 
 <div class="container section" id="services">
@@ -39,7 +43,7 @@ layout: base
 
     </div>
     {% endfor %}
-    <a href="#contact" class="smooth-scroll mt-3">> Weiter</a>
+    <p class="mt-5"><a href="#contact" class="smooth-scroll">> {{data.general.continue}}</a></p>
 </div>
 
 <div class="container section" id="contact">

@@ -45,7 +45,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(function () {
         $(".self").typed({
-            strings: ["digitale Prozessoptimierung", "Auswahl von Software-Tools", "Implementierung und Anpassung", "Schnittstellen-Entwicklung", "Interimmanagement", "digitale Strategie", "agile Methoden", "..."],
+            strings: ["digitale Prozessoptimierung", "Auswahl von Software-Tools", "digitale Business Cases", "Schnittstellen-Entwicklung", "Interimmanagement", "digitale Strategie", "agile Methoden", "..."],
             typeSpeed: 30,
             startDelay: 750,
             loop: true,

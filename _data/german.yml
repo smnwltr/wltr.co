@@ -23,7 +23,11 @@ home:
 profile:
   id: profile
   heading: Profil
-  p: "lorem ipsumsss"
+  p:
+    - Erfahrung in <strong>Management Consulting, Business Operations und Software-Entwicklung</strong> in Konzernen, Mittelstand und Startups.
+    - <strong>Internationale Mobilität und Erfahrung</strong>, sowohl beruflich wie akademisch, besonders in Lateinamerika (fließend in Deutsch, Englisch, Spanisch)
+    - Studium in BWL und Informatik an den <strong>renommiertesten Universitäten</strong> im In- und Ausland (Universität Mannheim, Technische Universität München, University of California)
+
 
 services:
   id: services
@@ -31,7 +35,7 @@ services:
   items:
     - name: Prozessoptimierung
       description: >- 
-        Digitalisierung bedeutet neue Chancen und Potenzial für Ihr Geschäft. Wir helfen Ihnen dabei,
+        Digitalisierung bedeutet neue Chancen und Möglichkeiten für Ihr Geschäft. Wir helfen Ihnen dabei,
         das volle Potenzial in Ihrem Markt zu erreichen und unterstützen Sie bei der Optimierung von
         digitalen Geschäftsprozessen und der Einführung neuester Software. 
 
