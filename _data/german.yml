@@ -18,7 +18,7 @@ home:
     strategischen Neuausrichtung – wir sind Ihr Partner, um alle digitalen Herausforderungen zu meistern.
   typed:
     start: "Wir sind ihr Partner für " 
-    items: [digitale Prozessoptimierung", "Auswahl von Software-Tools", "digitale Business Cases", "Schnittstellen-Entwicklung", "Interimmanagement", "digitale Strategie", "agile Methoden", "..."]
+    items: ["digitale Prozessoptimierung", "Auswahl von Software-Tools", "digitale Business Cases", "Schnittstellen-Entwicklung", "Interimmanagement", "digitale Strategie", "agile Methoden", "..."]
 
 profile:
   id: profile
