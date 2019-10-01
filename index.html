@@ -8,7 +8,7 @@ layout: base
         <img src="assets/img/header.jpg" alt="{{site.title}}" />
     </div>
     <div class="container">
-        <h1 class="mt-4"><strong><span style="font-size: 190%">SIMON WALTER</span></strong><br />
+        <h1 class="mt-4"><strong><span class="headline">SIMON WALTER</span></strong><br />
             DIGITAL BUSINESS CONSULTING</h1>
         <div class="typed">
             <h4 class="my-3">{{data.home.typed.start}}<span id="self"></span></h4>
@@ -27,37 +27,58 @@ layout: base
     </div>
 </div>
 
-<div class="container section" id="profile">
-    <h2 class="mb-3">{{data.profile.heading}}</h2>
-    <ul class="profile">
-        {% for i in  data.profile.points %}
-        <li>{{i.p}} {% if i.a %}({% for j in i.a %}<a href="{{j[1]}}"
-                target="_blank">{{j[0]}}</a>{% unless forloop.last == true %}, {% endunless %}{% endfor %}){% endif %}
-        </li>
-        {% endfor %}
-    </ul>
-    <p class="mt-5"><a href="#services" class="smooth-scroll">> {{data.general.continue}}</a></p>
-</div>
-
-<div class="container section" id="services">
-    <h2 class="mb-3">{{data.services.heading}}</h2>
-    {% for i in data.services.items %}
-    <div class="row">
-        <div class="col-md-9">
-            <h4 class="mt-5">{{i.name}}</h4>
-            <p>{{i.description}}</p>
+<div class="section" id="profile">
+    <div class="container-fluid divider">
+        <div class="container">
+            <h2 class="py-2">{{data.profile.heading}}</h2>
         </div>
-
     </div>
-    {% endfor %}
-    <p class="mt-5"><a href="#contact" class="smooth-scroll">> {{data.general.continue}}</a></p>
+    <div class="container">
+        <ul class="profile mt-5">
+            {% for i in  data.profile.points %}
+            <li>{{i.p}} {% if i.a %}({% for j in i.a %}<a href="{{j[1]}}"
+                    target="_blank">{{j[0]}}</a>{% unless forloop.last == true %},
+                {% endunless %}{% endfor %}){% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        <p class="mt-5"><a href="#services" class="smooth-scroll">> {{data.general.continue}}</a></p>
+    </div>
 </div>
 
-<div class="container section" id="contact">
-    <h2 class="mb-3">{{data.contact.heading}}</h2>
-    <p>{{data.contact.p}}</p>
-    {% for i in data.contact.items %}
-    <p><a href="{{i.type}}:{{i.link}}" {% if i.type == "https" %} target="_blank" rel="noopener"
-            {% endif %}>{{i.name}}</a></p>
-    {% endfor %}
+<div class="section" id="services">
+    <div class="container-fluid divider">
+        <div class="container">
+            <h2 class="py-2">{{data.services.heading}}</h2>
+        </div>
+    </div>
+    <div class="container">
+        {% for i in data.services.items %}
+        <div class="row">
+            <div class="col-md-9">
+                <h4 class="mt-5">{{i.name}}</h4>
+                <p>{{i.description}}</p>
+            </div>
+
+        </div>
+        {% endfor %}
+        <p class="mt-5"><a href="#contact" class="smooth-scroll">> {{data.general.continue}}</a></p>
+    </div>
+
+</div>
+
+<div class="section" id="contact">
+    <div class="container-fluid divider">
+        <div class="container">
+            <h2 class="py-2">{{data.contact.heading}}</h2>
+        </div>
+    </div>
+    <div class="container">
+        <p class="thicker mt-5">{{data.contact.p}}</p>
+        {% for i in data.contact.items %}
+        <p><a href="{{i.type}}:{{i.link}}" {% if i.type == "https" %} target="_blank" rel="noopener"
+                {% endif %}>{{i.name}}</a></p>
+        {% endfor %}
+    </div>
+
 </div>
