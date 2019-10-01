@@ -28,17 +28,19 @@ layout: base
 </div>
 
 <div class="container section" id="profile">
-    <h2>{{data.profile.heading}}</h2>
+    <h2 class="mb-3">{{data.profile.heading}}</h2>
     <ul class="profile">
-        {% for i in  data.profile.p %}
-        <li>{{i}}</li>
+        {% for i in  data.profile.points %}
+        <li>{{i.p}} {% if i.a %}({% for j in i.a %}<a href="{{j[1]}}"
+                target="_blank">{{j[0]}}</a>{% unless forloop.last == true %}, {% endunless %}{% endfor %}){% endif %}
+        </li>
         {% endfor %}
     </ul>
     <p class="mt-5"><a href="#services" class="smooth-scroll">> {{data.general.continue}}</a></p>
 </div>
 
 <div class="container section" id="services">
-    <h2>{{data.services.heading}}</h2>
+    <h2 class="mb-3">{{data.services.heading}}</h2>
     {% for i in data.services.items %}
     <div class="row">
         <div class="col-md-9">
@@ -52,7 +54,7 @@ layout: base
 </div>
 
 <div class="container section" id="contact">
-    <h2>{{data.contact.heading}}</h2>
+    <h2 class="mb-3">{{data.contact.heading}}</h2>
     <p>{{data.contact.p}}</p>
     {% for i in data.contact.items %}
     <p><a href="{{i.type}}:{{i.link}}" {% if i.type == "https" %} target="_blank" rel="noopener"

@@ -1,22 +1,11 @@
 {% assign data = site.data.german %}
 
 <div class="container-fluid footer-container">
-    <div class="container">
-        <div class="row py-4">
-            <div class="col-md-4">
-                <p class="thicker">Simon Walter <br />
-                    Digital Business Consulting <br />
-            </div>
-            <div class="col-md-4">
-                <a href="tel:00491781696739">+49&nbsp;178&nbsp;1696739</a><br />
-                <a href="mailto:hello@wltr.co">hello@wltr.co</a></p>
-            </div>
-            <div class="col-md-4">
-                <a href="#imprintModal" data-toggle="modal">{{data.footer.imprint}}</a><br />
-                <a href="#dataModal" data-toggle="modal">{{data.footer.privacy}}</a>
-            </div>
-        </div>
+    <div class="container py-5">
+        <a href="#imprintModal" data-toggle="modal">{{data.footer.imprint}}</a><br />
+        <a href="#dataModal" data-toggle="modal">{{data.footer.privacy}}</a>
     </div>
+</div>
 </div>
 
 <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>

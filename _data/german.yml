@@ -18,15 +18,26 @@ home:
     strategischen Neuausrichtung – wir sind Ihr Partner, um alle digitalen Herausforderungen zu meistern.
   typed:
     start: "Wir sind ihr Partner für " 
-    items: ["digitale Prozessoptimierung", "Auswahl von Software-Tools", "digitale Business Cases", "Schnittstellen-Entwicklung", "Interimmanagement", "digitale Strategie", "agile Methoden", "..."]
+    items: ["digitale Prozessoptimierung", "Auswahl von Software-Tools", 
+    "digitale Business Cases", "Schnittstellen-Entwicklung", "Interimmanagement", 
+    "digitale Strategie", "agile Methoden", "..."]
 
 profile:
   id: profile
   heading: Profil
-  p:
-    - Erfahrung in <strong>Management Consulting, Business Operations und Software-Entwicklung</strong> in Konzernen, Mittelstand und Startups.
-    - <strong>Internationale Mobilität und Erfahrung</strong>, sowohl beruflich wie akademisch, besonders in Lateinamerika (fließend in Deutsch, Englisch, Spanisch)
-    - Studium in BWL und Informatik an den <strong>renommiertesten Universitäten</strong> im In- und Ausland (Universität Mannheim, Technische Universität München, University of California)
+  points:
+    - p: Erfahrung in <strong>Management Consulting, Business Operations und Software-Entwicklung</strong> in Konzernen, Mittelstand und Startups
+      a:
+        - ['Deloitte Consulting','https://www.linkedin.com/company/deloitte-deutschland/']
+        - ['KPMG',https://www.linkedin.com/company/kpmg-deutschland/] 
+        - ['Flixbus','https://www.linkedin.com/company/flixbus/']
+        - ['NavVis',https://www.linkedin.com/company/navvis/]
+    - p: <strong>Internationale Mobilität und Erfahrung</strong>, sowohl beruflich wie akademisch, besonders in Lateinamerika (fließend in Deutsch, Englisch, Spanisch)
+    - p: Studium in BWL und Informatik an den <strong>renommiertesten Universitäten</strong> im In- und Ausland
+      a: 
+        - ['Universität Mannheim',https://www.uni-mannheim.de/]
+        - ['Technische Universität München',https://www.tum.de]
+        - ['University of California',https://www.ucsb.edu/]
 
 
 services:
