@@ -1,3 +1,10 @@
+{% case page.lang %}
+{% when "de" %}
+{% assign lang = site.data.german %}
+{% when "en" %}
+{% assign lang = site.data.english %}
+{% endcase %}
+
 <html>
 {% include head.html %}
 
@@ -6,7 +13,85 @@
     {% include navbar.html %}
 
     <div class="main">
-        {{content}}
+        <div class="section" id="home">
+            <div id="header-image">
+                <img src="/assets/img/header.jpg" alt="{{site.title}}" />
+            </div>
+            <div class="container">
+                <h1 class="mt-4"><strong><span class="headline">SIMON WALTER</span></strong><br />
+                    DIGITAL BUSINESS CONSULTING</h1>
+                <div class="typed">
+                    <h4 class="my-3">{{lang.home.typed.start}}<span id="self"></span></h4>
+                    <div id="typed-strings">
+                        {% for i in lang.home.typed.items %}
+                        <p>{{i}}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-9">
+                        <p>{{lang.home.boilerplate}}</p>
+                    </div>
+                </div>
+                <p class="mt-5"><a href="#profile" class="smooth-scroll">> {{lang.general.continue}}</a></p>
+            </div>
+        </div>
+
+        <div class="section" id="profile">
+            <div class="container-fluid divider">
+                <div class="container">
+                    <h2 class="py-2">{{lang.profile.heading}}</h2>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="profile mt-5">
+                    {% for i in  lang.profile.points %}
+                    <li>{{i.p}} {% if i.a %}({% for j in i.a %}<a href="{{j[1]}}"
+                            target="_blank">{{j[0]}}</a>{% unless forloop.last == true %},
+                        {% endunless %}{% endfor %}){% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <p class="mt-5"><a href="#services" class="smooth-scroll">> {{lang.general.continue}}</a></p>
+            </div>
+        </div>
+
+        <div class="section" id="services">
+            <div class="container-fluid divider">
+                <div class="container">
+                    <h2 class="py-2">{{lang.services.heading}}</h2>
+                </div>
+            </div>
+            <div class="container">
+                {% for i in lang.services.items %}
+                <div class="row">
+                    <div class="col-md-9">
+                        <h4 class="mt-5">{{i.name}}</h4>
+                        <p>{{i.description}}</p>
+                    </div>
+
+                </div>
+                {% endfor %}
+                <p class="mt-5"><a href="#contact" class="smooth-scroll">> {{lang.general.continue}}</a></p>
+            </div>
+
+        </div>
+
+        <div class="section" id="contact">
+            <div class="container-fluid divider">
+                <div class="container">
+                    <h2 class="py-2">{{lang.contact.heading}}</h2>
+                </div>
+            </div>
+            <div class="container">
+                <p class="thicker mt-5">{{lang.contact.p}}</p>
+                {% for i in lang.contact.items %}
+                <p><a href="{{i.type}}:{{i.link}}" {% if i.type == "https" %} target="_blank" rel="noopener"
+                        {% endif %}>{{i.name}}</a></p>
+                {% endfor %}
+            </div>
+
+        </div>
     </div>
 
     {% include footer.html %}
