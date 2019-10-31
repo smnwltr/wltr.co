@@ -62,13 +62,13 @@ a,.thicker,.scrolltop {
     padding: 15px 5px;
     position: relative;
 }
-.navbar li { 
+.navbar li .underline { 
     display: table-cell; 
     position: relative; 
     padding: 15px 0;
   }
 
-.navbar li a:after {    
+.navbar li .underline a:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -80,11 +80,19 @@ a,.thicker,.scrolltop {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-.navbar li a:hover:after { 
+.navbar li .underline a:hover:after { 
     width: 100%; 
     left: 0; 
   }
 
+.navbar .dropdown-menu {
+  border: none;
+  border-radius: 0;
+}
+
+.navbar .dropdown-item {
+  background-color: #fff;
+}
 .my-navbar-img {
     width: 80px;
     height: 80px;

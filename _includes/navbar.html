@@ -1,4 +1,11 @@
-{% assign data = site.data.german %}
+{% case page.lang %}
+{% when "de" %}
+{% assign lang = site.data.german %}
+{% assign langlink = "en" %}
+{% when "en" %}
+{% assign lang = site.data.english %}
+{% assign langlink = "de" %}
+{% endcase %}
 
 <nav class="navbar navbar-expand-md fixed-top">
     <a class="navbar-brand" href="#">
@@ -13,17 +20,36 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            {% for i in data.general.menu %}
-            <li class="nav-item{% if forloop.first %} active{% endif %}">
+        <ul class="navbar-nav ml-auto mr-2">
+            {% for i in lang.general.menu %}
+            <li class="nav-item{% if forloop.first %} active{% endif %} underline ml-2">
                 <a class="nav-link smooth-scroll" href="#{{i.id}}">{{i.name}}</a>
             </li>
             {% endfor %}
+            <li class="d-none d-md-block nav-item dropdown ml-5">
+                <a class="nav-link dropdown-toggle" href="/{{page.lang}}" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="/assets/img/{{page.lang}}.png" alt="" height="16px">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/{{langlink}}"><img src="/assets/img/{{langlink}}.png" alt=""
+                            height="16px" /></a>
+                </div>
+            </li>
         </ul>
+        <div class="d-md-none ml-2 my-3">
+            <p><strong>Languages:</strong>
+                <a class="ml-2" href="/{{page.lang}}"><img src="/assets/img/{{page.lang}}.png" alt="" height="16px" />
+                </a>
+                <a class="ml-2" href="/{{langlink}}"><img src="/assets/img/{{langlink}}.png" alt="" height="16px" />
+                </a>
+            </p>
+        </div>
+
     </div>
 
 </nav>
 
 <div class='scrolltop'>
-    <div class='scroll icon'>{{ data.general.up }}</div>
+    <div class='scroll icon'>{{ lang.general.up }}</div>
 </div>

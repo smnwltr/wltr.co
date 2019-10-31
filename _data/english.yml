@@ -14,8 +14,8 @@ general:
 home:
   id: home
   boilerplate: >-
-    Von digitaler Prozessoptimierung über Implementierung von Softwarelösungen bis hin zur
-    strategischen Neuausrichtung – wir sind Ihr Partner, um alle digitalen Herausforderungen zu meistern.
+    Digital process optimization, implementation of software tools, 
+    and strategic digital concepts - we are your partner to master any challenge.
   typed:
     start: "We are your partner for " 
     items: ["digital process optimization", "selection of software tools", 
@@ -24,39 +24,39 @@ home:
 
 profile:
   id: profile
-  heading: Profil
+  heading: Profile
   points:
-    - p: Erfahrung in <strong>Management Consulting, Business Operations und Software-Entwicklung</strong> in Konzernen, Mittelstand und Startups
+    - p: Experience in <strong>Management Consulting, Business Operations and Software Development</strong> in corporates, small businesses and start-ups
       a:
         - ['Deloitte Consulting','https://www.linkedin.com/company/deloitte-deutschland/']
         - ['KPMG',https://www.linkedin.com/company/kpmg-deutschland/] 
         - ['Flixbus','https://www.linkedin.com/company/flixbus/']
         - ['NavVis',https://www.linkedin.com/company/navvis/]
-    - p: <strong>Internationale Mobilität und Erfahrung</strong>, sowohl beruflich wie akademisch, besonders in Lateinamerika (fließend in Deutsch, Englisch, Spanisch)
-    - p: Studium in BWL und Informatik an den <strong>renommiertesten Universitäten</strong> im In- und Ausland
+    - p: <strong>International flexibility and experience</strong>, both professionally and academically, especially in Latin America (fluent in German, English, Spanish)
+    - p: Studies in Business, Economics, and Computer Science at some of the <strong>most prestigious universities</strong> in the United States and Europe
       a: 
-        - ['Universität Mannheim',https://www.uni-mannheim.de/]
-        - ['Technische Universität München',https://www.tum.de]
+        - ['University of Mannheim',https://www.uni-mannheim.de/]
+        - ['Technical University of Munich',https://www.tum.de]
         - ['University of California',https://www.ucsb.edu/]
 
 
 services:
   id: services
-  heading: Leistungen
+  heading: Services
   items:
-    - name: Prozessoptimierung
+    - name: Process optimization
       description: >- 
         Digitalisierung bedeutet neue Chancen und Möglichkeiten für Ihr Geschäft. Wir helfen Ihnen dabei,
         das volle Potenzial in Ihrem Markt zu erreichen und unterstützen Sie bei der Optimierung von
         digitalen Geschäftsprozessen und der Einführung neuester Software. 
 
-    - name: Projektmanagement
+    - name: Project management
       description: >- 
         Wir begleiten Sie bei der Einführung neuer Software in Ihrere Organisation. 
         Durch langjährige Erfahrungen finden wir uns im Konzern genauso wie im Startup 
         oder im Mittelstand bestens zurecht. Unser Service ist immer abgestimmt auf die Bedürfnisse des Kunden.
 
-    - name: Interimmanagement
+    - name: Interim management
       description: >- 
         Sie haben einen kurzfristigen Engpass und benötigen schnelle Abhilfe? 
         Wir helfen schnell und unkompliziert für kurze oder mittelfristige Zeiträume.
@@ -65,8 +65,8 @@ services:
 
 contact:
   id: contact
-  heading: Kontakt
-  p: "Interesse geweckt? Schreiben Sie mir jederzeit oder rufen Sie an:"
+  heading: Contact
+  p: "Interested? Get in touch any time:"
   items: 
     - name: LinkedIn
       link: //linkedin.com/in/smnwltr
@@ -74,12 +74,84 @@ contact:
     - name: hello@wltr.co
       link: hello@wltr.co
       type: mailto
-    - name: "+49 178 1696739"
+    - name: "+1 720 560 3133 (USA)"
+      link: 0017205603133
+      type: tel      
+    - name: "+49 178 1696739 (Germany)"
       link: 00491781696739
       type: tel
 
 footer:
-  imprint: Impressum
-  privacy: Datenschutzerkl&auml;rung
+  imprint: Imrpint
+  privacy: Data protection
 
+imprint:
+  title: Imprint
+  source: Source
+  h3_sections:
+    - 
+      h: "Angaben gem&auml;&szlig; &sect; 5 TMG"
+      p:
+        - "Simon Walter<br />
+                    Digital Business Consulting<br />
+                    Hohenzollernstrasse 27<br />
+                    80801 M&uuml;nchen"
+
+    -
+      h: "Contact"
+      p:
+        - "Phone: +1 720 560 3133 / +49 178 1696739<br />
+                    E-Mail: hello@wltr.co"
+    # -
+    #   h: "Umsatzsteuer-ID"
+    #   p:
+    #     - "Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;27 a Umsatzsteuergesetz:<br />
+    #                 XXX"
+  h4_sections:
+    - 
+      h: "References for graphics"
+      p:
+        - "The title image has been contributed by <a href=\"http://www.freepik.com\">Freepik</a>"
+    -
+      h: "Dispute resolution"
+      p:
+        - "The European Commission provides a platform for online dispute resolution (ODR).
+You can find the platform here <a
+                        href=\"https://ec.europa.eu/consumers/odr\" target=\"_blank\"
+                        rel=\"noopener noreferrer\">https://ec.europa.eu/consumers/odr</a>.<br /> Unsere E-Mail-Adresse
+                    finden Sie oben im Impressum."
+        - "We do not agree and are not required to take part in online dispute resolutions at consumer arbitration boards."
+    -
+      h: "Liability for contents"
+      p:
+        - "As service providers, we are liable for own contents of these websites 
+        according to Sec. 7, paragraph 1 German Telemedia Act (TMG). However, according 
+        to Sec. 8 to 10 German Telemedia Act (TMG), service providers are not obligated 
+        to permanently monitor submitted or stored information or to search for evidences 
+        that indicate illegal activities."
+        - "Legal obligations to removing information or to blocking the use of information
+         remain unchallenged. In this case, liability is only possible at the time of knowledge 
+         about a specific violation of law. Illegal contents will be removed immediately at the 
+         time we get knowledge of them."
+    -
+      h: "Liability for links"
+      p:
+        - "Our offer includes links to external third party websites. We have no influence on the 
+        contents of those websites, therefore we cannot guarantee for those contents. Providers or 
+        administrators of linked websites are always responsible for their own contents.
+        The linked websites had been checked for possible violations of law at the time of the 
+        establishment of the link. Illegal contents were not detected at the time of the linking."
+        - "A permanent monitoring of the contents of linked websites cannot be imposed without reasonable
+         indications that there has been a violation of law. Illegal links will be removed immediately 
+         at the time we get knowledge of them."
+    -
+      h: "Copyright"
+      p:
+        - "Contents and compilations published on these websites by the providers are subject to German copyright laws. 
+        Reproduction, editing, distribution as well as the use of any kind outside the scope of the copyright law 
+        require a written permission of the author or originator. Downloads and copies of these websites are 
+        permitted for private use only. The commercial use of our contents without permission of the originator is prohibited."
+        - "Copyright laws of third parties are respected as long as the contents on these websites do not originate
+         from the provider. Contributions of third parties on this site are indicated as such. However, if you notice 
+         any violations of copyright law, please inform us. Such contents will be removed immediately."
 

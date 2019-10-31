@@ -1,8 +1,15 @@
+{% case page.lang %}
+{% when "de" %}
+{% assign data = site.data.german.imprint %}
+{% when "en" %}
+{% assign data = site.data.english.imprint %}
+{% endcase %}
+
 <div class="modal" id="dataModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-full" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Datenschutzerkl&auml;rung</h5>
+                <h5 class="modal-title">{{data.title}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">X</span>
                 </button>
@@ -223,7 +230,7 @@
                         rel="noopener noreferrer">https://developers.google.com/fonts/faq</a> und in der
                     Datenschutzerkl&auml;rung von Google: <a href="https://policies.google.com/privacy?hl=de"
                         target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy?hl=de</a>.</p>
-                <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
+                <p class="mt-4">{{data.source}}: <a href="https://www.e-recht24.de">eRecht24</a></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
