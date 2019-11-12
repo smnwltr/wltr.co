@@ -15,10 +15,6 @@
 # in the templates via {{ site.myvariable }}.
 title: Simon Walter Digital Business Consulting
 email: hello@wltr.co
-description: >-
-  Von digitaler Prozessoptimierung über Implementierung von Softwarelösungen 
-  bis hin zur strategischen Neuausrichtung – wir sind Ihr Partner, um alle 
-  digitalen Herausforderungen zu meistern.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
