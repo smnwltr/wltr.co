@@ -77,20 +77,20 @@ contact:
     - name: "+1 720 560 3133 (USA)"
       link: 0017205603133
       type: tel      
-    - name: "+49 178 1696739 (Germany)"
-      link: 00491781696739
+    - name: "+49 89 95428027 (Germany)"
+      link: 00498995428027
       type: tel
 
 footer:
   imprint: Imrpint
-  privacy: Data protection
+  privacy: Privacy Policy
 
 imprint:
   title: Imprint
   source: Source
   h3_sections:
     - 
-      h: "Angaben gem&auml;&szlig; &sect; 5 TMG"
+      h: "Information according to Sec. 5 German Telemedia Act (TMG)"
       p:
         - "Simon Walter<br />
                     Digital Business Consulting<br />
@@ -100,7 +100,7 @@ imprint:
     -
       h: "Contact"
       p:
-        - "Phone: +1 720 560 3133 / +49 178 1696739<br />
+        - "Phone: +1 720 560 3133 / +49 89 95428027<br />
                     E-Mail: hello@wltr.co"
     # -
     #   h: "Umsatzsteuer-ID"
@@ -155,3 +155,217 @@ You can find the platform here <a
          from the provider. Contributions of third parties on this site are indicated as such. However, if you notice 
          any violations of copyright law, please inform us. Such contents will be removed immediately."
 
+data_protection:
+  title: Privacy Policy
+  source: Source
+  sections:
+    -
+      h: "1. Overview of data protection"
+      subsections:
+        -
+          h: "General"
+          p:
+            - "The following information provide a simple overview on what will happen to your personal data when visiting our website. 
+            Personal data includes any data, which allows to identify you personally. 
+            Detailed information on data protection can be found in our data privacy policy stated below."
+        -
+          h: "Data collection on our website"
+          p: 
+            - "<strong>Who is responsible for data collection on this website?</strong>"
+            - "The data collection on this website is processed by the website operator and their contact 
+            information may be obtained from the imprint of this website."
+            - "<strong>How do we collect your data?</strong>"
+            - "Your data may being collected by you providing it to us. This may be, for example, through 
+            you entering data in a contact form or sending information via e-mail."
+            - "Other data may be collected automatically upon visting the website through our IT systems. 
+            This concerns mainly technical data (for example internet browser, operating system, time of visit, etc.). 
+            This data is collected automatically as soon as a visitor enters the website."
+            - "<p><strong>What do we use your data for?</strong>"
+            - "A part of the data is being processed to ensure proper functioning of the website. 
+            Other data may be used to analyze your user behavior."
+            - "<strong>Which rights do you have concerning your data?</strong>"
+            - "You may request at anytime and free of charge information regarding the source, recipient, 
+            and cause of saved personal data. Further, you also have the right to request correction or deletion of this data.
+            Regarding this matter as well as regarding any other questions with respect to data protection, you may contact us any time
+            at the contact information provided in the imprint. Furthermore, you have the right to file a 
+            complaint with the competent regulatory authority."
+            - "Additionally you have the right, under certain circumstances, to request a limiation of the extent of 
+            collection of your personal data. More information on this may be obtained from the privacy policy unter 'Right to limit data collection'"
+    -
+      h: "2. Hosting"
+      subsections:
+        -
+          h: "External hosting"
+          p:
+            - "This website is being hosted at a third party service provider (strato AG). Personal data,
+                      which is collected on this website, is saved on the servers of the hoster. This concerns, in particular, IP addresses, 
+                      contact requests, meta and communication data, contract data, contact data, names, site access requests, and other data 
+                      which is created through a website."
+            - "The hoster is being used to fulfil obligations towards potential and existing clients (Art. 6 para. 1 lit. b GDPR) and 
+            for the benefit of secure, fast, and efficient access to our online service by a professional provider(Art. 6 Abs. 1 lit. f GDPR)."
+            - "Our hoster will process your data only to the extent required to perform their service obligations and will follow 
+            our requests with respect to this data."
+            - "<strong>Abschluss eines Vertrages &uuml;ber Auftragsverarbeitung</strong>"
+            - "To ensure compliance with data protection rights, we have signed a data procession contract with our hoster."
+    -
+      h: "3. General information and mandatory information"
+      subsections:
+        -
+          h: "Data protection"
+          p:
+            - "The provider of this website take the protection of your personal data very seriously.
+            We treat your personal data with absolute discretion and according to the legal requirements 
+            for data proection and this privacy policy."
+            - "When using this website, various personal data is collected. Personal data refers to data which allows to identify you personally.
+            The underelying privacy policy details which data we collect and what we use it for. It also details how and to what cause we do so."
+            - "We advise you that data transfer on the internet (for example communication via e-mail) can contain security breaches. A complete 
+            protection of your data regarding unlawful access by third parties cannot be guaranteed."          
+        -
+          h: "Notice regarding the responsible party for this website"
+          p:
+            - "The responsible party for data procession on this website is:"
+            - "Simon Walter<br />
+                      Digital Business Consulting <br />
+                      Hohenzollernstr. 27<br />
+                      80801 München"
+            - "Telefon: +49 (0) 89 95428027<br />
+                      E-Mail: hello@wltr.co"
+            - "Responsible party is the natural or leegal person, which alone or jointly with others decides on the purposes and means 
+            of procession personal data (for example names, e-mail addresses, etc.)."
+        -
+          h: "Revocation of your consent to data processiong"
+          p:
+            - "Many data processiong actions are only possible with your explicit consent.
+            You may revoke previously given consent at any time. Sending an informal e-mail is sufficient.
+             The data processed before we receive your request may still be legally processed. send us an e-mail."
+        -
+          h: "Right to object the data collection in special circumstances and to object direct marketing (Art. 21 GDPR)"
+          p:
+            - "WHEN DATA COLLECTION IS BASED ON ART. 6 SECTION 1 LIT. E OR F GDPR, YOU HAVE THE RIGHT AT ANY TIME, DUE TO REASONS
+            BASED ON YOUR SPECIAL SITUATION, TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA; THIS ALSO APPLIES TO A 
+            PROFILING BASED ON THESE TERMS. THE RESPECTIVE LEGAL BASIS, UPON WHICH DATA PROCESSING IS BASED, IS SPECIFIED 
+            WITHIN THIS PRIVACY POLICY. WHEN YOU OBJECT TO DATA PROCESSING, WE WILL STOP PROCESSING YOUR PERSONAL DATA, UNLESS WE 
+            CAN PROVE REASONS REQUIRING THE PROCESSING WHICH PREDOMINATE YOUR INTERESTS, RIGHTS AND LIBERTIES OR THE PROCESSING SERVES TO 
+            ENFORCE, EXERCISE OR DEFEND LEGAL CLAIMS (OBJECTION IN ACCORDANTE WITH ART. 21 SECTION 1 GDPR)."
+            - "IN CASE YOUR PERSONAL DATA IS PROCESSED FOR DIRECT MARKETING, YOU HAVE THE RIGHT TO OBJECT TO THE PROCESSING OF 
+            YOUR PERSONAL DATA FOR THE PURPOSE OF DIRECT MARKETING; THIS INCLUDES FOR PROFILING, AS LONG AS IT IS CONNECTED TO SUCH 
+            DIRECT MARKETING. SHOULD YOU OBJECT, YOUR PERSONAL DATA WILL NOT BE USED FOR DIRECT MARKETING HENCEFORTH (OBJECT ACCORDING 
+            TO ART. 21 SECTION 2 GDPR)."
+        -
+          h: "Right to file a complaint with the competent supervisory authority"
+          p:
+            - "In the event of violation of the GDPR, affected persons have the right to file a complaint with a competent
+            supervisory authority, in particular within the Member State of their geeneral residence, their work place, 
+            or at the place of the suspected offense. The right to file a complaint remains regardless of other 
+            administrative or legal remedy."
+        -
+          h: "Right to transfer data"
+          p:
+            - "You have the right to request a transfer of data which we have collected automatically with your consent
+            or in order to fulfil a contract to another party in an established, machine-readable format. Should you request
+            direct transfer of the data to another responsible entity, this can only be carried out within certain technical boundaries."
+        -
+          h: "SSL and TLS encryption"
+          p:
+            - "This website uses a SSL/TLS encryption for security reasons and to ensure secure transmission of 
+            confidential content, such as orders or requests which you may transfer to us as providers of this website. 
+            You can identify an encrypted connection, when the address bar of your browser changes from 
+            &bdquo;http://&ldquo; to &bdquo;https://&ldquo; and by the lock symbol in your address bar."
+            - "When SSL/TLS encryption is activated, the data you transfer to us cannot be intercepted by third parties."
+        -
+          h: "Disclosure, deletion and correction"
+          p:
+            - "You have the right - within the boundaries of legal requirements - to receive at any time disclosure regarding
+            your stored personal data, their origin and recipients and the basis of data processing and if necessary a right to 
+            correct or delete this data. Regarding this, and regarding further questions about personal data, you may contact us
+            any time at the contact data provided in the imprint."
+        -
+          h: "Right to limit data processing"
+          p:
+            - "You have the right to demand limitation of processing your personal data. Please reach out to via the contact
+             in our imprint any time. The right to limit data processing exists in the following cases:"
+            - "                <ul>
+                      <li>When you deny the correctness of your personal data stored with us, we will require some time 
+                      to validate claim. While we are validating your claim, you may request the limitation of data processing 
+                      of your personal data.</li>
+                      <li>When your personal data has been/is being processed unlawfully, you may request to limit data processing
+                       instead of data deletion.</li>
+                      <li>Whene you do not require your personal data anymore, but need it to exercise, defend or claim damages in connection 
+                      with your personal rights, you have the right to request limitation of data processing instead of deletion.</li>
+                      <li>When you filed an objection following Art. 21, Section 1 GDPR,a consideration between your and our interests has to 
+                      be conducted. As long as no final assessment on who's interests prevail is available, you have the right 
+                      to demand limitation of personal data processing.</li>
+                  </ul>"
+            - "When you have limited personal data processing, this data - besides being stored - may only be processed with your consent or to
+            assert, exercise or defend legal claims or to protect the rights of another natural or legal entity or
+            for reasons of important public interest of the European Union or that of a Member State."        
+        -
+          h: "Objection to promotional emails"
+          p:
+            - "The provider of this website object to the use of contact information displayed within the legal imprint requirements
+            to send not explicitly requested advertisments and promotional content. The provider of this website explicitly
+            remain the right to pursue legal action in case unwanted and unrequested material is being sent, e.g. in the form of spam emails."          
+    -
+      h: "4. Data collection on this website"
+      subsections:
+        -
+          h: "Server log files"
+          p:
+            - "The provider of this website automatically collects and stores information in so-called 'server log files',
+            which your browser automatically transmits to us. Those are:"
+            - "                <ul>
+                    <li>Browser type and version</li>
+                    <li>Operating system </li>
+                    <li>Referrer URL</li>
+                    <li>Host name of the accessing computer</li>
+                    <li>Time of the server access request</li>
+                    <li>IP address</li>
+                </ul>"
+            - "This data is not being consolidated with other data sources"
+            - "This data is being collectiong based on Art 6, Section 1 lit. f GDPR.
+              The website provider has a legitimate interest in the technical error-free rendering and the optimization of
+              their website - thus the server log files must be collected."
+        -
+          h: "Contact form"
+          p:
+            - "When you send requests via the contact form, the data you entered in the form - including the contact data -
+              are stored in order to process the request and in case of followup questions. We will not make this data available 
+              to any third party without your consent."
+            - "The processing of this data occurs based on Art 6, Section 1 lit. b GDPR, as long as your request is connected 
+            to the fulfilment of a contract or requires to process pre-contract measures. In all other cases, the data processing is
+            based on our legitimate interest to effectively process any request send to us (Art 6, Section 1 lit. f GDPR) or on
+            your consent (Art 6, Section 1 lit. a GDPR) as long as it has been prompted."
+            - "The data you entered in the contact form remains with us, until you request us to delete it, revoke your consent 
+            to store it, or the basis for storing does not apply any more (e.g. after final processing of your request).
+            Mandatory legal regulations - in particular recording keeping periods - remain unaffected."
+        -
+          h: "Inquiry via email, phone, or telefax"
+          p:
+            - "When you contact us via email, phone or telefax, your request including all resulting personal data (name, request)
+            will be stored and processed with us in order to handle your request. We will not make this data available
+            to any third party without your consent."
+            - "The processing of this data is based on Art. 6, Section 1 lit. b GDPR, as long as ypour request is connected to the
+            fulfilment of a contract or requires pre-contact measures. In all other cases, the data processing is based on your consent
+            (Art. 6, Section 1 lit a GDPR) and/or on our legitimate interest (Art 6. Section 1 lit. f GDPR) to effectively process 
+            the request direct at us."
+            - "The data transfered by you to us throw contact requests remains with us until you request to delete such data, 
+            revoke your consent to store it, or the basis for storing it does not apply any more (e.g. after final processing
+            of your request) Mandatory legal regulations - in particular recording keeping periods - remain unaffected."
+    -
+      h: "5. Plugins and tools"
+      subsections:
+        -
+          h: "Google Web Fonts"
+          p:
+            - "This website uses so called web fonts offered by Google, to ensure uniform rendering of fonts. When accessing a site
+            , yor browser loads the required fonts into your browser cache to render texts and fonts correctly."
+            - "For this purpose, the browser you use has to conenct to Google servers. Thereby, Google learns that your IP address has visited
+            this website. The use of Google Web Fonts is based on the interest in 
+            uniform and appealing reendeering of our online servce. This constitutes a legitimate interest following
+            Art 6. Section 1 lit. f GDPR."
+            - "In case your browser does not support web fonts, a standard font of your computer will be used."
+            - "Further information about Google Web Fonts can be found at <a
+                        href=\"https://developers.google.com/fonts/faq\" target=\"_blank\"
+                        rel=\"noopener noreferrer\">https://developers.google.com/fonts/faq</a> and within the privacy policy of Google: <a href=\"https://policies.google.com/privacy?hl=de\"
+                        target=\"_blank\" rel=\"noopener noreferrer\">https://policies.google.com/privacy?hl=de</a>."
+                  
