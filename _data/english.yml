@@ -1,6 +1,7 @@
 general:
   continue: Continue
   up: "Scroll up"
+  close: Close
   menu: 
     - name: Home
       id: home

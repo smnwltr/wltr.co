@@ -1,21 +1,21 @@
 {% case page.lang %}
 {% when "de" %}
-{% assign data = site.data.german.data_protection %}
+{% assign data = site.data.german %}
 {% when "en" %}
-{% assign data = site.data.english.data_protection %}
+{% assign data = site.data.english %}
 {% endcase %}
 
 <div class="modal" id="dataModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-full" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">{{data.title}}</h5>
+                <h5 class="modal-title">{{data.data_protection.title}}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">X</span>
                 </button>
             </div>
             <div class="modal-body p-4" id="result">
-                {% for i in data.sections %}
+                {% for i in data.data_protection.sections %}
                 <h3 class="mt-4">{{i.h}}</h3>
                 {% for j in i.subsections %}
                 <h4 class="mt-3">{{j.h}}</h4>
@@ -24,10 +24,10 @@
                 {% endfor %}
                 {% endfor %}
                 {% endfor %}
-                <p class="mt-4">{{data.source}}: <a href="https://www.e-recht24.de">eRecht24</a></p>
+                <p class="mt-4">{{data.data_protection.source}}: <a href="https://www.e-recht24.de">eRecht24</a></p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">{{data.general.close}}</button>
             </div>
         </div>
     </div>
