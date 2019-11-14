@@ -27,23 +27,28 @@
             </li>
             {% endfor %}
             <li class="d-none d-md-block nav-item dropdown ml-5">
-                <a class="nav-link dropdown-toggle" href="{{'/' | relative_url}}{{page.lang}}" id="navbarDropdown"
-                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="{{'/assets/img/' | relative_url }}{{page.lang}}.png" alt="" height="16px">
+                <a class="nav-link dropdown-toggle mt-3" href="{{'/' | relative_url}}{{page.lang}}" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    aria-label="Language Button">
+                    <img src="{{'/assets/img/' | relative_url }}{{page.lang}}.png" alt="Language {{page.lang}}"
+                        style="max-height: 16px" />
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{'/' | relative_url }}{{langlink}}"><img
-                            src="{{'/assets/img/' | relative_url }}{{langlink}}.png" alt="" height="16px" /></a>
+                    <a class="dropdown-item ml-1" href="{{'/' | relative_url }}{{langlink}}"><img
+                            src="{{'/assets/img/' | relative_url }}{{langlink}}.png" alt="Language {{langlink}}"
+                            style="max-height: 16px" /></a>
                 </div>
             </li>
         </ul>
         <div class="d-md-none ml-2 my-3">
             <p><strong>Languages:</strong>
                 <a class="ml-2" href="{{'/' | relative_url }}{{page.lang}}"><img
-                        src="{{'/assets/img/' | relative_url }}{{page.lang}}.png" alt="" height="16px" />
+                        src="{{'/assets/img/' | relative_url }}{{page.lang}}.png" alt="Language {{page.lang}}"
+                        style="max-height: 16px" />
                 </a>
                 <a class="ml-2" href="{{'/' | relative_url }}{{langlink}}"><img
-                        src="{{'/assets/img/' | relative_url }}{{langlink}}.png" alt="" height="16px" />
+                        src="{{'/assets/img/' | relative_url }}{{langlink}}.png" alt="Language {{langlink}}"
+                        style="max-height: 16px" />
                 </a>
             </p>
         </div>

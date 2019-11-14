@@ -4,8 +4,8 @@
 {% when "en" %}
 {% assign lang = site.data.english %}
 {% endcase %}
-
-<html>
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
 {% include head.html %}
 
 <body>
@@ -46,8 +46,8 @@
             <div class="container">
                 <ul class="profile mt-5">
                     {% for i in  lang.profile.points %}
-                    <li>{{i.p}} {% if i.a %}({% for j in i.a %}<a href="{{j[1]}}"
-                            target="_blank">{{j[0]}}</a>{% unless forloop.last == true %},
+                    <li>{{i.p}} {% if i.a %}({% for j in i.a %}<a href="{{j[1]}}" target="_blank"
+                            rel="noopener">{{j[0]}}</a>{% unless forloop.last == true %},
                         {% endunless %}{% endfor %}){% endif %}
                     </li>
                     {% endfor %}
