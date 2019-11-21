@@ -1,5 +1,7 @@
-RewriteEngine on
-RewriteCond %{HTTP:Accept-Language} (de) [NC]
-RewriteRule .* /de/index.html [L]
-RewriteCond %{HTTP:Accept-Language} (en) [NC]
-RewriteRule .* /en/index.html [L]
+RewriteEngine On
+
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ https://wltr.co/en/ [L,R=301]
+
+RewriteCond %{HTTP:Accept-Language} ^de [NC]
+RewriteRule ^$ https://wltr.co/de/ [L,R=301]
