@@ -18,6 +18,11 @@ window.onload = function () {
     });
 }
 
+// strip links from post previews
+
+$(document).ready(function () {
+    $('.fadeout').find('a').contents().unwrap();
+})
 
 // smooth scrolling
 $(document).ready(function () {

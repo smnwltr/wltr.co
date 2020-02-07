@@ -8,13 +8,16 @@ h1,h2,h3,h4 {
 }
 
 h2 {
-  color: white;
   margin-top: auto;
   margin-bottom: auto;
 }
 .divider {
   background: linear-gradient(90deg, rgba(71,145,144,1) 0%, rgba(50,130,153,1) 66%, rgba(10,50,75,1) 100%);
   padding: 1rem;
+}
+
+.divider h2 {
+  color: white
 }
 
 .headline {
@@ -279,4 +282,44 @@ a,.thicker,.scrolltop {
   font-size: 120%;
   margin-top: 2rem;
 
+}
+
+/* blog styles */
+
+.fadeout {
+  -webkit-mask-image: linear-gradient(to bottom, black 66%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 66%, transparent 100%);
+} 
+
+.blog-btn {
+  border: 2px solid;
+}
+
+.blog h2{
+  font-size: 16px;
+  display: none;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin-bottom: .5em;
+  margin-top: 2em;
+}
+
+.blog-post h3 {
+  font-size: 20px;
+  margin-bottom: .5em;
+  margin-top: 1em;
+}
+
+.blog-post h4 {
+  font-size: 16px;
+  margin-bottom: .5em;
+  margin-top: .75em;
+}
+
+.highlight {
+  background-color:lightgrey;
+  border-radius: 5px;
+  padding: 2px
 }

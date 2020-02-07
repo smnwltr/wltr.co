@@ -3,6 +3,8 @@
 {% assign data = site.data.german %}
 {% when "en" %}
 {% assign data = site.data.english %}
+{% else %}
+{% assign data = site.data.english %}
 {% endcase %}
 
 <div class="container-fluid footer-container">

@@ -8,9 +8,20 @@
 {% endcase %}
 
 <nav class="navbar navbar-expand-md fixed-top">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
         <img class="my-navbar-img" src="{{'/assets/img/logo-black.png' | relative_url }}" alt="{{site.title}}">
     </a>
+
+    {% if page.blog %}
+
+    <div class="collapse navbar-collapse justify-content-md-center pr-5">
+        <a href="/blog/" style="text-decoration: none;">
+            <h2 class="text-dark">/blog/</h2>
+        </a>
+
+    </div>
+
+    {% else %}
 
     <button class="navbar-toggler hamburger hamburger--spring d-md-none" type="button" data-toggle="collapse"
         data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,6 +37,9 @@
                 <a class="nav-link smooth-scroll" href="#{{i.id}}">{{i.name}}</a>
             </li>
             {% endfor %}
+            <li class="nav-item underline ml-2">
+                <a class="nav-link" href="/blog" target="_blank">Blog</a>
+            </li>
             <li class="d-none d-md-block nav-item dropdown ml-5">
                 <a class="nav-link dropdown-toggle mt-3" href="{{'/' | relative_url}}{{page.lang}}" id="navbarDropdown"
                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -55,8 +69,14 @@
 
     </div>
 
+    {% endif %}
+
 </nav>
+
+{% unless page.blog %}
 
 <div class='scrolltop'>
     <div class='scroll icon'>{{ lang.general.up }}</div>
 </div>
+
+{% endunless %}

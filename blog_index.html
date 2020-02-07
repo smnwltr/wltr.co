@@ -1,0 +1,31 @@
+---
+layout: blog
+permalink: /blog/index.html
+blog: true
+---
+
+<div class="container">
+    <div class="section">
+        <h3 class="text-center mt-5">Welcome to my blog. Here I write about blah and blah</h3>
+        <div class="mt-5">
+            <h4 class="mb-4">Recent posts</h4>
+            {% for i in site.posts %}
+            <div class="row post-preview">
+                <div class="col-md-9">
+                    <div class="fadeout">
+                        <p><strong>{{i.title}}<span style="float: right">{{i.date|date: "%B %e, %Y"}}</span></strong>
+                        </p>
+                        <p>{{i.excerpt}}</p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <a href="{{i.url}}" style="bottom: 3em">Read more</a>
+                    <hr>
+                </div>
+
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>

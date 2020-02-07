@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+{% include head.html %}
+
+<body>
+
+    {% include navbar.html %}
+
+    <div class="main blog-post">
+        <div class="" style="height: 100px"></div>
+        <div class="container section">
+            <h2 class="mb-5">{{page.title}}</h2>
+            {{ content }}
+        </div>
+
+    </div>
+
+    {% include footer.html %}
+
+    {% include imprint.html %}
+    {% include data_protection.html %}
+
+</body>
+
+</html>

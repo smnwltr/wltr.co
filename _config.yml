@@ -24,6 +24,25 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# collections:
+#   posts:
+#     output: true
+#     layout: post
+#     blog: true
+#     permalink: /blog/:year-:month-:day-:title.html
+#     excerpt_separator: <!--more-->
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts" 
+    values:
+      layout: post
+      blog: true
+      permalink: /blog/:year-:month-:day-:title.html
+      # excerpt_separator: <!--more-->
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
