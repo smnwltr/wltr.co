@@ -20,6 +20,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
@@ -41,7 +42,7 @@ defaults:
       layout: post
       blog: true
       permalink: /blog/:year-:month-:day-:title.html
-      # excerpt_separator: <!--more-->
+#      excerpt_separator: <!--more-->
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

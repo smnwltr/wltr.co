@@ -2,6 +2,8 @@
 <html lang="{{page.lang}}">
 {% include head.html %}
 
+<link rel="stylesheet" href="{{'/assets/css/syntax-highlight.css'|relative_url}}">
+
 <body>
 
     {% include navbar.html %}
@@ -9,10 +11,23 @@
     <div class="main blog-post">
         <div class="" style="height: 100px"></div>
         <div class="container section">
-            <h2 class="mb-5">{{page.title}}</h2>
+            <h1 class="mb-5">{{page.title}} {{page.subtitle}}</h1>
             {{ content }}
         </div>
-
+        <div class="container page-navigation">
+            <div class="row">
+                {% if page.previous.url %}
+                <div class="col-sm-6">
+                    <a class="prev" href="{{page.previous.url}}">&larr;Previous: {{page.previous.title}}</a>
+                </div>
+                {% endif %}
+                <div class="col-sm-6">
+                    {% if page.next.url %}
+                    <a class="next" href="{{page.next.url}}">Next: {{page.next.title}}&rarr;</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
     </div>
 
     {% include footer.html %}

@@ -9,23 +9,49 @@ blog: true
         <h3 class="text-center mt-5">Welcome to my blog. Here I write about blah and blah</h3>
         <div class="mt-5">
             <h4 class="mb-4">Recent posts</h4>
-            {% for i in site.posts %}
-            <div class="row post-preview">
-                <div class="col-md-9">
-                    <div class="fadeout">
-                        <p><strong>{{i.title}}<span style="float: right">{{i.date|date: "%B %e, %Y"}}</span></strong>
+
+            <div class="card-deck">
+                {% for i in site.posts %}
+                {% assign remainder = forloop.index |modulo: 3 %}
+                <div class="card">
+                    <!-- <img src="https://via.placeholder.com/300x200" alt="{{i.title}}" class="card-img-top" /> -->
+
+                    <div class="card-body">
+                        <a href="{{i.url}}">
+                            <h4 class="card-title">{{i.title}}</h4>
+                            <div class="fadeout">
+                                <p class="card-text">{{i.excerpt |truncate: 250}}</p>
+                            </div>
+                        </a>
+                        <p>
+                            {% for j in i.tags %}
+                            <span class="post-preview-tag">{{j}}</span>
+                            {% endfor %}
                         </p>
-                        <p>{{i.excerpt}}</p>
                     </div>
-                    <div class="clearfix"></div>
-
-                    <a href="{{i.url}}" style="bottom: 3em">Read more</a>
-                    <hr>
+                    <div class="card-footer">
+                        <small class="text-muted">{{i.date|date: "%B %e, %Y"}}</small>
+                    </div>
                 </div>
-
+                {% if remainder == 0 %}
             </div>
+            <div class="card-deck mt-5">
+                {% endif %}
 
-            {% endfor %}
+                {% if forloop.last == true %}
+
+                {% case remainder %}
+                {% when 1 %}
+                <div class="card placeholder-card"></div>
+                <div class="card placeholder-card"></div>
+                {% when 2 %}
+                <div class="card placeholder-card"></div>
+                {% endcase %}
+
+                {% endif %}
+
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>

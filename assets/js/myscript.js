@@ -18,10 +18,10 @@ window.onload = function () {
     });
 }
 
-// strip links from post previews
+// strip links from post previews, add target blank to blog post links (since not possible in markdown)
 
 $(document).ready(function () {
-    $('.fadeout').find('a').contents().unwrap();
+    $('.blog-post.container').find('a').attr('target', '_blank').attr('rel', 'noopener noreferrer');
 })
 
 // smooth scrolling
@@ -46,3 +46,26 @@ $(document).ready(function () {
     $(function () { $(".scroll").click(function () { $("html,body").animate({ scrollTop: 0 }, 1000); return false }) })
 
 });
+
+
+// Adjusting scroll to for anchor tags so they are not hidden by navbar, 
+// thanks to https://stackoverflow.com/a/17535094/11159842
+
+// The function actually applying the offset
+function offsetAnchor() {
+    if (location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY - 100);
+    }
+}
+
+// Captures click events of all <a> elements with href starting with #
+$(document).on('click', 'a[href^="#"]', function (event) {
+    // Click events are captured before hashchanges. Timeout
+    // causes offsetAnchor to be called after the page jump.
+    window.setTimeout(function () {
+        offsetAnchor();
+    }, 0);
+});
+
+// Set the offset when entering page with hash present in the url
+window.setTimeout(offsetAnchor, 0);
