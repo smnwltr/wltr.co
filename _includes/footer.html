@@ -7,7 +7,8 @@
 {% assign data = site.data.english %}
 {% endcase %}
 
-<div class="container-fluid footer-container">
+<div class="container-fluid footer-container" {% if include.margin == false %}{% else %}style="margin-top:20em"
+    {% endif %}>
     <div class="container py-5">
         <a href="#imprintModal" data-toggle="modal">{{data.imprint.title}}</a><br />
         <a href="#dataModal" data-toggle="modal">{{data.data_protection.title}}</a>

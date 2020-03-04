@@ -8,17 +8,22 @@
 {% endcase %}
 
 <nav class="navbar navbar-expand-md fixed-top">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="{{'/' | relative_url'}}">
         <img class="my-navbar-img" src="{{'/assets/img/logo-black.png' | relative_url }}" alt="{{site.title}}">
     </a>
 
     {% if page.blog %}
 
     <div class="collapse navbar-collapse justify-content-md-center pr-5">
-        <a href="/blog/" style="text-decoration: none;">
+        <a href="{{'/blog/' | relative_url}}" style="text-decoration: none;">
             <h2 class="text-dark">/blog/</h2>
         </a>
+    </div>
 
+    <div class="d-block d-sm-none justify-content-md-center pr-5">
+        <a href="{{'/blog/' | relative_url}}" style="text-decoration: none;">
+            <h2 class="text-dark">/blog/</h2>
+        </a>
     </div>
 
     {% else %}
@@ -37,8 +42,8 @@
                 <a class="nav-link smooth-scroll" href="#{{i.id}}">{{i.name}}</a>
             </li>
             {% endfor %}
-            <li class="nav-item underline ml-2">
-                <a class="nav-link" href="/blog" target="_blank">Blog</a>
+            <li class="nav-item blog-btn ml-2">
+                <a class="nav-link" href="{{'/blog' | relative_url}}" target="_blank">Blog</a>
             </li>
             <li class="d-none d-md-block nav-item dropdown ml-5">
                 <a class="nav-link dropdown-toggle mt-3" href="{{'/' | relative_url}}{{page.lang}}" id="navbarDropdown"

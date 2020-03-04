@@ -30,7 +30,48 @@
         </div>
     </div>
 
-    {% include footer.html %}
+    <div class="container-fluid mt-5">
+        <div class="row mt-5">
+            <div id="portrait" class="col-md-8 mountain-bg">
+                <div class="p-5 text-center">
+                    <div class="portrait-inner">
+                        <img src="{{'/assets/img/simon_portrait.jpg' | relative_url}}" alt="Simon Walter"
+                            class="rounded-circle" />
+                        <p class="my-1">Simon Walter</p>
+                        <p id="summary" class="mt-5">{{site.data.english.blog.desc}}</p>
+                        <p>Reach out to <a
+                                href="mailto:{{site.data.english.blog.contact}}">{{site.data.english.blog.contact}}</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="similar" class="col-md-4">
+                <div class="p-5">
+                    <h3 class="mb-3">Related posts:</h3>
+                    {% assign counter = 0 %}
+                    {% for i in site.posts %}
+                    {% if i.tags contains page.tags[0] %}
+                    <p><a href="{{i.url}}" alt="{{i.title}}">{{i.title}}</a></p>
+                    {% assign counter = counter | plus: 1 %}
+                    {% endif %}
+                    {% if counter >= 5 %}
+                    {% break %}
+                    {% endif %}
+                    {% endfor %}
+                    {% if counter == 0 %}
+                    {% for i in site.posts limit: 5 %}
+                    <p><a href="{{i.url}}" alt="{{i.title}}">{{i.title}}</a></p>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    {% include footer.html margin=false %}
 
     {% include imprint.html %}
     {% include data_protection.html %}

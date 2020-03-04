@@ -7,6 +7,18 @@
     {% include navbar.html %}
 
     <div class="main blog">
+        <div class="container-fluid mountain-bg">
+            <div class="p-5 text-center">
+                <div class="portrait-inner">
+                    <img src="{{'/assets/img/simon_portrait.jpg' | relative_url}}" alt="Simon Walter"
+                        class="rounded-circle" />
+                    <p class="my-1">Simon Walter</p>
+                    <p id="summary" class="mt-5">{{site.data.english.blog.desc}}</p>
+                    <p>Reach out to <a
+                            href="mailto:{{site.data.english.blog.contact}}">{{site.data.english.blog.contact}}</a></p>
+                </div>
+            </div>
+        </div>
         {{ content }}
     </div>
 

@@ -23,6 +23,11 @@ home:
     "digital business cases", "custom API development", "interim management", 
     "digital strategy", "..."]
 
+blog:
+  contact: hello@wltr.co
+  desc: >- 
+    I write about my endeavors in developing modern web apps with Django, creating blazing-fast static sites with Jekyll, and everything related to it.
+
 profile:
   id: profile
   heading: Profile
