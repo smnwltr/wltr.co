@@ -16,7 +16,7 @@ blog: true
                     <!-- <img src="https://via.placeholder.com/300x200" alt="{{i.title}}" class="card-img-top" /> -->
 
                     <div class="card-body">
-                        <a href="{{'i.url'|relative_url}}">
+                        <a href="{{i.url|relative_url}}">
                             <h4 class="card-title">{{i.title}}</h4>
                             <div class="fadeout">
                                 <p class="card-text">{{i.excerpt |truncate: 250}}</p>
