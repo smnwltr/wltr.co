@@ -126,7 +126,21 @@ DATABASES = {'default': dj_database_url.parse(DATABASE_URL, conn_max_age=500)}
 
 ```
 
-We just made sure that our database connection information is stored securely. But using the `dj-database-url` package has the additional benefit of also helping us out with Heroku. Using the settings as specified above, all we need to do on Heroku is provision a postgresql add-on (through the command line or the web interface) and Heroku will automatically set the necessary environment variable, which then will be picked up by our Django app. No need for user or password creation, no need to update anything. It just works. Very nice. 
+We just made sure that our database connection information is stored securely. But using the `dj-database-url` package has the additional benefit of also helping us out with Heroku. Using the settings as specified above, all we need to do on Heroku is provision a postgresql add-on (through the command line or the web interface) and Heroku will automatically set the necessary environment variable, which then will be picked up by our Django app. No need for user or password creation, no need to update anything. It just works. Very nice.
+
+
+### Get the adapter
+
+The last thing you need is the *psycopg2* adapter. This package is basically a piece of software that handles the connection between your application and the database. It abstracts certain concepts and makes database-handling easier for you. Think of it as a translator between Django code and SQL statements.
+
+In your project root, execute the following:
+
+```shell 
+pip install psycopg2
+pip freeze > requirements.txt
+```
+
+Alright, preparations complete. Let's move on.
 
 ## Let's test it
 
