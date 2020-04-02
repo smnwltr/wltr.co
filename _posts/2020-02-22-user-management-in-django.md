@@ -196,6 +196,7 @@ Let's make sure Django picks up all these URLs at the common prefix *users/*, so
 
 ```python
 urlpatterns = [
+    from django.urls import path, include # Make sure to import include here since we need it below
     # ...
     path('users/', include('users.urls')),
 ]
@@ -205,7 +206,7 @@ urlpatterns = [
 
 ### Admin
 
-here, we want to register the forms we just created as well as the model and the fields we want to display:
+Here, we want to register the forms we just created as well as the model and the fields we want to display. Head over to the *admin.py* file and make sure it looks like this:
 
 ```python
 from django.contrib import admin

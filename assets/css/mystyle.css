@@ -403,7 +403,7 @@ p code {
 }
 
 .mountain-bg {
-  background-image: url({{'/assets/img/mountain_bg_dark.jpg' | relative_url }});
+  background-image: url({{'/assets/img/mountain_bg_dark.jpg'| relative_url }});
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;

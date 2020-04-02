@@ -53,6 +53,15 @@ Next, we add another file that Heroku uses as input for building your server. By
 
 `echo 'python-3.8.1 > runtime.txt`
 
+Finally, Heroku needs one more file as instructions, the `Procfile`. Create it in your project's root folder via `touch Procfile`. Note that there is no extension. That's what Heroku wants.
+
+Now add the following lines to the file
+```
+release: python magellan/manage.py migrate
+web: gunicorn --pythonpath magellan magellan.wsgi --log-file -
+```
+This tells Heroku to first run the migrate command during release, and second to start a web process. 
+
 Now, update the settings.py to import the django-heroku setting which automates things such as ALLOWED_HOSTS and WhiteNoise (static files, not required now but likely in any app that you develop further):
 
 ```python
@@ -145,3 +154,18 @@ Remember that the manage.py file is located one level down from your project's r
 
 
 One last thing: You might wonder why we did not even bother to create a database? The short answer is: Heroku does it for you! Heroku automatically provisions a hobby-dev (their name for the free tier) database for you. And since we are using the DATABASE_URL variable, you don't need to do anything for your app to connect to the database. How sweet is that?!?
+
+
+## Common issues when deploying on Heroku
+
+When deploying on a live server, we should of course set `DEBUG=False` in our *settings.py*. This is a security measure to avoid sensitive information being leaked. However, this also means you need to run `heroku logs --tail` to see any meaningful error messages in case the site does not work.
+
+### Error 500: Internal Server Error - I keep running into this
+
+This is a really annoying error since it doesn't tell you any specifics on what is wrong. Moreover, running `heroku logs` also just tells you it's a 500 error. Well great, could be anything. This gets even more annoying when on your staging environment you temporarily switch `Debug=True` to inspect and then realize that all of a sudden the site works perfectly. What could it be? Well, we need to have a closer look at the logs. But first, we need to tell Django to give us proper infos in the logs, not just saying it's a 500 error. Do so by adding the following line to Django's *settings.py*:
+
+```python
+DEBUG_PROPAGATE_EXCEPTIONS = True
+```
+
+Now, when inspecting the Heroku logs, you should get more detailed information on the actual exception that occured. In many cases, I found this to be connected to either improper setting of `ALLOWED_HOSTS`, an issue with *Whitenoise* (maybe just get rid of it...), or missing static files that you link to in your templates but did not actually place in the appropriate folder. This should all be fairly easy to fix once you know what's really wrong.

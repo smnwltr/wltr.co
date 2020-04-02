@@ -75,7 +75,7 @@ So let's move to our project root folder and get to it:
 ```shell
 pip install python-decouple
 pip freeze > requirements.txt
-echo 'SECRET_KEY=<your secret key\nDEBUG=True\nENVIRONMENT=Development' > .env
+echo 'SECRET_KEY=<your secret key>\nDEBUG=True\nENVIRONMENT=Development' > .env
 ```
 Notice the `\n` between our variables? This might look a bit confusing but it ensures that we insert new lines after each variable, since we do need to store each variable in its own line. An alternative to this last line would have been to split it up into one command per line and use the append operator `>>`
 
@@ -98,8 +98,3 @@ Nice, we are now using the config variables stored in our `.env`file within the 
 Every app needs a database, but there are so many options... so which one should we pick here? First of all, Django does not officially support NoSQL databases. If you really wanted to go that way though, there are some forks that extend Django with respective engines. So looking at traditional databases, I usually go with Postgres, since it remains open source, has a huge community (read: get help easily), and it is supported well by Django. However, Django by default comes with SQLite as the standard data backend. And at some point I discovered that it's actually quite nice to just use that instead of having to make sure my postgres server was running, the connection works, and so on. ~~That's why I now use SQLite locally, while on my online staging environments on Heroku I use their built-in Postgres. This has worked very well so far, with no real issues and has saved me some local concerns. Should the need arise, there are ways to load a SQLite dump into Postgres, so there is a way out. Do note though, that my approach is not exactly 12Factor friendly, which states that you should eliminate such differences in an effort to guarantee smooth continuous deployment.~~~
 
 Update: Shorty after writing this post, and while still working on the setup, I reconsidered my approach. While SQLite is nice and easy to handle, I believe it is important to follow best practice. Plus, this is a serious project, and I do want to make it future-proof. So I decided to actually go for it and install the same PostgreSQL version that Heroku is using and set up a local database with it. I wrote a full post on [how to install Postgres and use it in your Django/Heroku project here]({% link _posts/2019-11-28-setup-postgresql-for-django-heroku.md %}).
-
-
-## Deploy (on Heroku)
-
-#Todo: Write deploy blog post

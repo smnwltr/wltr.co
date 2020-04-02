@@ -110,12 +110,13 @@ Now all we have to do is make sure that we specify a *STATIC_URL* and the correc
 
 ```python
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
 
 if ENVIRONMENT == 'Development':
     STATIC_URL = '/static/'
     STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 elif ENVIRONMENT == 'Staging':
-    STATIC_URL = '/static/'
+    STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, 'static')
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 STATICFILES_FINDERS = [
@@ -175,7 +176,7 @@ heroku config:set DISABLE_COLLECTSTATIC=1
 
 Then, you need to tell Heroku to run the correct commands in the right order. One way to do so is by using a second *buildpack* for this special case, which is available [here](https://elements.heroku.com/buildpacks/drpancake/heroku-buildpack-django-sass#buildpack-instructions).
 
-There are other ways, like adding the commands to your Procfile's release phase, for example. Also, should you never realize that the SCSS file has not been compiled and/or served correctly, you can run the commands manually:
+There are other ways, like adding the commands to your Procfile's release phase, for example. Also, should you ever realize that the SCSS file has not been compiled and/or served correctly, you can run the commands manually:
 
 ```shell
 heroku run python manage.py compilescss
